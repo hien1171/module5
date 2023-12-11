@@ -14,7 +14,7 @@ class App extends Component{
        this.setState({item:event.target.value})
     }
     handleAddItem=()=>{
-      if(this.state.trim!==''){
+      if(this.state.item!==''&&this.state.item.trim==''){
         this.setState((prevState)=>({
           list:[...prevState.list,prevState.item],
           item:'',
@@ -32,9 +32,16 @@ class App extends Component{
           <button onClick={this.handleAddItem}>Add</button>
 
           <ul>
-            {this.state.list.map((item, index) => (
-                <li key={index}>{item}</li>
-            ))}
+              <thead>
+              <h3>Todo list</h3>
+              </thead>
+              <tbody>
+              {this.state.list.map((item, index) => (
+                  <li key={index}>{item}</li>
+              ))}
+              </tbody>
+
+
           </ul>
         </div>
     );
