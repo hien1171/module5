@@ -1,4 +1,4 @@
-// src/components/TodoList.js
+// src/component/TodoList.js
 import React, { useState, useEffect } from 'react';
 import {fetchTodos, findAll, submitTask} from '../service/TodoService';
 

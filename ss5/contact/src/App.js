@@ -2,8 +2,8 @@
 // import './App.css';
 // import React from "react";
 // import {ToastContainer} from "react-toastify";
-// import Contact from "./components/Contact";
-// import Student from "./components/Student";
+// import Contact from "./component/Contact";
+// import Student from "./component/Student";
 //
 // function App() {
 //     return (
